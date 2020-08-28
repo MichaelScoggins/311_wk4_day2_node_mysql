@@ -35,6 +35,9 @@ Additionally, navigate to the `initialize.sql` file and look at the CREATEs for 
 
 This function is done for us. Notice the SQL statement retrieving all the rows from the users table.
 
+- In your getAllUsers return all fields of all users including the fields of usersContact & usersAddress
+- In your createUser be sure that a complete user is created inluding all fields in usersContact & usersAddress
+
 ### getUserById
 
 The route is going to look like this: http://localhost:4001/users/389
@@ -86,6 +89,7 @@ This route will look like this: http://localhost:4001/users/bogus
 But it will be using the DELETE protocol so again we will need to use Postman to achieve this.
 
 Write a SQL statement to DELETE FROM users WHERE first_name = req param first_name
+
 
 ## Summary
 
